@@ -13,14 +13,12 @@
     <!-- Styling is not the job of HTML leave it to CSS-->
     <style>
       body {
-        background-color: bisque;
       }
 
       img {
-        width: 200px;
+        width: 240px;
+        height: 180px;
         border-radius: 20px;
-        float: left;
-        margin: 10px;
       }
 
       p.primary {
@@ -47,6 +45,18 @@
         margin-right: 5px;
         margin-left: 5px;
       }
+
+      .photo {
+        display: inline-block;
+        width: 250px;
+        height: 200px;
+      }
+
+      .personal-statement {
+        display: inline-block;
+        width: 500px;
+        height: 200px;
+      }
     </style>
   </head>
 
@@ -54,25 +64,32 @@
     <h1>deneme</h1>
     <!--Use these headers to give the website a hierarchy. Dont use more than one h1 per site. -->
     <h2>Ustabaşlıkatıcı &copy;</h2>
-    <p>
-      Bu siteyi şu an için (muhtemelen stabil bi gelir sahibi olana dek) bi
-      deneme alanı ve öğrendiğim şeyleri paylaşmak için özgürce kullanabileceğim
-      bir. Bunun bana da motivasyon sağlayacağını ve ilgilendiğim şeyleri çok
-      daha sistematik bir şekilde öğrenmemi sağlayacağını umuyorum. Aynı zamanda
-      bu yolculuğu olabildiğince kişisel de tutup hem fizik kariyerimdeki
-      gelişmeleri ve ilerlemeleri hem de yapmak istediğim teknik şeylerdeki
-      süreçleri paylaşabilmeyi umuyorum.
+    <div>
+      <div class="photo">
+        <img src="cvfoto.jpg" alt="ben" />
+      </div>
+      <div class="personal-statement">
+        <p>
+          Bu siteyi şu an için (muhtemelen stabil bi gelir sahibi olana dek) bi
+          deneme alanı ve öğrendiğim şeyleri paylaşmak için kullunacağım. Bunun
+          bana da motivasyon sağlayacağını ve ilgilendiğim şeyleri çok daha
+          sistematik bir şekilde öğrenmemi sağlayacağını umuyorum. Aynı zamanda
+          bu yolculuğu olabildiğince kişisel de tutup hem fizik kariyerimdeki
+          gelişmeleri ve ilerlemeleri hem de yapmak istediğim teknik şeylerdeki
+          süreçleri paylaşabilirsem de benden mutlusu olmaz.
 
-      <!-- &nbsp; is short for non braking space -->
-    </p>
+          <!-- &nbsp; is short for non braking space -->
+        </p>
+      </div>
+    </div>
+
     <h3>Daha Küçük Başlık</h3>
     <div class="main">
-      <img src="cvfoto.jpg" alt="ben" />
       <p class="primary">Bu <em>önemli</em> yazı</p>
       <!--There is also a similar element called strong which does bold intead of italic.-->
       <p class="secondary">Bu daha az önemli yazı</p>
       <p class="tertiary">Bu daha da az önemli yazı</p>
-      <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU">Bunu izliyom</a>
+      <a href="https://zeynepkalaca.github.io/">Askımın sitesi</a>
     </div>
 
     <a href="proje.html" class="navigasyon"> Projeler </a>
